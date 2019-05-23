@@ -1,9 +1,0 @@
-ofSetWindowPosition(ofGetScreenWidth()/2 - ofGetWidth()/2, 0);
-gui = new ofxDatGui();
-gui->setPosition(ofGetWidth()/2 - gui->getWidth() - 20, (ofGetHeight()/2 - gui->getHeight()/2) - 10);
-gui->setWidth(700);
-gui->setTheme(new ofxDatGuiThemeSmoke());
-gui->addLabel("inputs");
-gui->addToggle("DSP", false);
-gui->addButton("load initial parameters");
-gui->addSlider("input", -101, 6);
