@@ -581,7 +581,7 @@ void ofApp::draw() {
         
         
     ofSetColor(255, 255, 255);
-    franklinBook14.drawString("Autumn Ground", 10, 25);
+    franklinBook14.drawString("Chão de Outono", 10, 25);
     
         
 

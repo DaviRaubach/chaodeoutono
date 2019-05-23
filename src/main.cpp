@@ -10,7 +10,6 @@
  */
 #include "ofMain.h"
 #include "ofApp.h"
-#include "audioSetup.h"
 
 //========================================================================
 int main(){
