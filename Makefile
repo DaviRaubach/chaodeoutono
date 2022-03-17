@@ -11,3 +11,10 @@ endif
 
 # call the project makefile!
 include $(OF_ROOT)/libs/openFrameworksCompiled/project/makefileCommon/compile.project.mk
+
+# @mkdir bin/$(BIN_NAME).app/Contents/Resources/data
+# @cp $(OF_DATA_PATH)/* bin/$(BIN_NAME).app/Contents/Resources/data
+
+
+
+

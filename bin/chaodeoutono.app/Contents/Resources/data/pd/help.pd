@@ -1,0 +1,84 @@
+#N canvas 98 23 816 826 10;
+#X obj -3 0 cnv 15 824 29 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj -3 554 cnv 15 817 313 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 443 1069 cnv 15 374 296 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj -3 252 cnv 15 819 286 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 456 910 P3: O som da flauta é espacializado de acordo com
+a amplitude do material “rasgos” e o material "slaps" está presente
+quando a flauta ultrapassa o threshold. - P4: uma coda que consiste
+num único som pré-gravado.;
+#X text 18 911 P1: o material “assobios” está presente quando
+a amplitude do microfone de controle está abaixo do threshold \, o
+material “folhas” está presente quando a flauta ultrapassa o threshold.
+O material folhas é espacializado de acordo com a amplitude de entrada
+do microfone de controle \; -P2: o material “folhas”
+está presente quando a amplitude do microfone de controle está abaixo
+do threshold \, o material “assobio” está presente quando a flauta
+ultrapassa o threshold \; ;
+#X text 407 262 Input: nível de entrada de áudio no sistema (este
+nível não tem relevância para a saída de áudio no sistema de projeção)
+\; para-Threshold: limite de amplitude. O sistema
+opera determinado processo abaixo deste valor e outro acima dele \;
+-DSP: liga e desliga o processamento geral
+do PD \, os números abaixo mostram a porcentagem do uso de CPU \;
+-Output control mic: nível de saída (projeção)
+do áudio do microfone de controle \; -Output headjoint:
+nível de saída (projeção) do microfone preso à cabeça da flauta
+\; -hipass: frequência de corte de graves do microfone da flauta
+para evitar os efeitos "p" e outros causados pelo "vento" na cápsula
+do microfone.;
+#X obj -2 1069 cnv 15 424 294 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X text 16 69 Microfonação \; Canais de entrada do PD:1:
+microfone de controle \; 2: Microfone preso à cabeça da flauta
+\; -PosicionamentoO microfone de controle deve ser posicionado
+à direita do performer na altura da flauta \, de tal forma que o movimento
+corporal para a direita ou esquerda altere o nível de entrada neste
+microfone.O segundo microfone deve ser preso à cabeça da flauta
+direcionado para o bocal.;
+#X obj 92 1088 esp_visual;
+#X obj 16 605 programs;
+#X obj 481 1088 outs;
+#X obj -3 18 cnv 15 824 30 empty empty Chão\ de\ Outono\ (2017)\ -\ Davi\ Raubach
+20 12 2 16 -49933 -262144 0;
+#X obj 16 282 ins;
+#X obj 638 568 cnv 15 161 278 empty empty empty 20 12 0 14 -133153
+-66577 0;
+#X msg 656 723 \; reverb 1 \; reverb_wet 0.1 \; reverb_dry 0.9 \; reverb_roomsize
+0.2 \; reverb_damping 0.3 \; reverb_width 1 \;;
+#X text 657 576 Parameters;
+#X msg 657 597 \; input 85 \; threshold -30 \; freqhip 300 \; miccontrol
+0.3 \; micbocal 0.2 \; start bang \;;
+#X text 18 886 Características musicais de cada programa;
+#X obj 0 1389 cnv 15 818 29 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 57 1294 esp_visual: demonstra a espacialização do material
+folhas e da flauta \; on/off: liga e desliga quando recebe o bang
+do parametro start.;
+#X text 425 72 Cada parâmetro deve ser configurado nas caixas de texto
+\, o patch não salva as configurações modificadas manualmente nos
+faders \;  \; Pode-se optar por operar na mesa de som o nível
+de entrada dos microfones durante a performance \;  \; Deve haver
+um equilíbrio \, os sons eletroacústicos não devem soar mais forte
+do que a flauta e vice-versa.;
+#X text 460 1304 outs: saída para a projeção \; 2 ou 4: stereo
+ou quadrafônico \; Reverb: parâmetros do reverb;
+#X text 248 573 Load initial parameters: carregar parâmetros iniciais
+\; -P1 \, P2 \, P3 \, P4: Os programas
+representam uma configuração de parâmetros e audios pré-gravados
+a serem disparados durante a performance. Alguns destes parâmetros
+podem ser modificados (clique com o direito sobre o módulo [programs]
+-> open \, mude os parâmetros nas caixas de texto como estas ao lado.-Parâmetros:
+formato: [send symbol] + [number]-input 0 a 100: se refere
+ao parâmetro “input” do módulo “ins”-treshold -99
+a +12 freqhip 0 - 20000: frequência (Hz) do filtro de graves “hipass”
+do módulo “ins”-miccontrol 0 a 1: output control mic-micbocal
+0 a 1: output headjoint mic start bang: liga alguns parâmetros necesários
+para o funcionamento \; ;
+#X text 15 815 Parâmetros do reverb podem servistos abrindo o subpatch"programs".
+;
+#X coords 0 0 1 1 25 25 0;

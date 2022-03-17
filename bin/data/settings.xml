@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<inputs>
+	<input>95</input>
+	<input_amplitude>-101</input_amplitude>
+	<threshold>-40.545</threshold>
+	<out_ctrl_mic>0</out_ctrl_mic>
+	<out_headjoint_mic>0</out_headjoint_mic>
+	<hipass_headjoint_mic>820</hipass_headjoint_mic>
+</inputs>
+<outputs>
+	<output>3</output>
+	<DSP>1</DSP>
+	<reverb_wet>0.135</reverb_wet>
+	<reverb_dry>1</reverb_dry>
+	<spatialization_on_off>1</spatialization_on_off>
+</outputs>
+<programs>
+	<UnknownName>P3</UnknownName>
+</programs>
+<group>
+	<audio_settings>0</audio_settings>
+	<instructions>1</instructions>
+</group>

@@ -1,0 +1,337 @@
+#N struct drawtut-attr float x float y;
+#N canvas 162 64 1225 761 10;
+#X obj 96 46 cnv 15 213 185 empty cnv_rcv empty 20 12 0 14 -66577 -262144
+0;
+#X obj 104 54 cnv 15 198 171 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 360 351 cnv 15 158 155 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 163 353 cnv 15 161 284 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 248 208 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 114 118 Use the 1 \, 2 \, 3 \, 4 key on;
+#X text 265 207 reset;
+#X obj 117 75 bng 28 250 50 0 empty empty empty 17 7 0 10 -262081 -1
+-1;
+#X text 181 312 You can change this parameters accordingto performance
+circunstances.;
+#X text 394 360 Program 2;
+#X obj 560 354 cnv 15 158 155 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 749 354 cnv 15 158 155 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X text 594 363 Program 3;
+#X text 783 363 Program 4;
+#X text 182 361 Initial/Program 1;
+#X text 115 56 Load initial parameters;
+#N canvas 349 351 863 368 sendsprograms 0;
+#X obj 679 78 s bp4;
+#X obj 419 155 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 438 155 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 457 155 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 475 155 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 330 18 spigot;
+#X floatatom 372 -6 5 0 0 0 - - -;
+#X msg 372 -26 0;
+#X obj 376 -111 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 330 35 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 372 -46 del 1000;
+#X obj 359 -83 t b b;
+#X obj 123 -47 loadbang;
+#X obj 19 -99 r resetprograms;
+#X msg 346 35 0;
+#X floatatom 481 -6 5 0 0 0 - - -;
+#X msg 482 -24 0;
+#X obj 486 -109 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 440 35 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 482 -44 del 1000;
+#X obj 469 -81 t b b;
+#X msg 459 35 0;
+#X obj 543 18 spigot;
+#X floatatom 590 -6 5 0 0 0 - - -;
+#X msg 597 -25 0;
+#X obj 601 -110 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 555 35 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 597 -45 del 1000;
+#X obj 584 -82 t b b;
+#X msg 585 35 0;
+#X obj 659 18 spigot;
+#X floatatom 699 -6 5 0 0 0 - - -;
+#X msg 706 -25 0;
+#X obj 710 -110 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 680 35 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 706 -45 del 1000;
+#X obj 693 -82 t b b;
+#X msg 701 35 0;
+#X msg 258 -102 0;
+#X obj 288 -101 s bp0;
+#X msg 279 18 0;
+#X obj 330 60 pipe 5;
+#X obj 440 62 pipe 5;
+#X obj 555 60 pipe 5;
+#X obj 680 53 pipe 5;
+#X obj 555 82 s bp3;
+#X obj 440 84 s bp2;
+#X obj 330 82 s bp1;
+#X obj 204 82 s bp1e2;
+#X msg 136 18 0;
+#X msg 144 -23 1;
+#X obj 201 35 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 232 35 0;
+#X obj 203 58 pipe 5;
+#X msg 411 35 1;
+#X obj 439 18 spigot;
+#X msg 302 35 1;
+#X msg 525 35 1;
+#X msg 652 35 1;
+#X obj 359 -139 inlet;
+#X obj 469 -140 inlet;
+#X obj 599 -142 inlet;
+#X obj 709 -143 inlet;
+#X obj 268 -134 inlet;
+#X obj 778 18 spigot;
+#X floatatom 808 -6 5 0 0 0 - - -;
+#X msg 825 -25 0;
+#X obj 829 -110 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 787 35 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 825 -45 del 1000;
+#X obj 812 -82 t b b;
+#X msg 814 35 0;
+#X obj 787 57 pipe 5;
+#X msg 759 35 1;
+#X obj 828 -143 inlet;
+#X obj 786 82 s bp5;
+#X obj 493 155 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 420 154 P1 P2 P3 P4 P5;
+#X obj 19 -77 del 100;
+#X connect 5 0 21 0;
+#X connect 5 0 29 0;
+#X connect 5 0 37 0;
+#X connect 5 0 51 0;
+#X connect 5 0 56 0;
+#X connect 5 0 71 0;
+#X connect 6 0 5 1;
+#X connect 7 0 6 0;
+#X connect 8 0 11 0;
+#X connect 9 0 41 0;
+#X connect 9 0 1 0;
+#X connect 10 0 7 0;
+#X connect 11 0 5 0;
+#X connect 11 1 10 0;
+#X connect 12 0 49 0;
+#X connect 12 0 50 0;
+#X connect 13 0 78 0;
+#X connect 14 0 9 0;
+#X connect 15 0 55 1;
+#X connect 16 0 15 0;
+#X connect 17 0 20 0;
+#X connect 18 0 42 0;
+#X connect 18 0 2 0;
+#X connect 19 0 16 0;
+#X connect 20 0 55 0;
+#X connect 20 1 19 0;
+#X connect 21 0 18 0;
+#X connect 22 0 21 0;
+#X connect 22 0 14 0;
+#X connect 22 0 37 0;
+#X connect 22 0 52 0;
+#X connect 22 0 57 0;
+#X connect 22 0 71 0;
+#X connect 23 0 22 1;
+#X connect 24 0 23 0;
+#X connect 25 0 28 0;
+#X connect 26 0 43 0;
+#X connect 26 0 3 0;
+#X connect 27 0 24 0;
+#X connect 28 0 22 0;
+#X connect 28 1 27 0;
+#X connect 29 0 26 0;
+#X connect 30 0 29 0;
+#X connect 30 0 14 0;
+#X connect 30 0 21 0;
+#X connect 30 0 52 0;
+#X connect 30 0 58 0;
+#X connect 30 0 71 0;
+#X connect 31 0 30 1;
+#X connect 32 0 31 0;
+#X connect 33 0 36 0;
+#X connect 34 0 44 0;
+#X connect 34 0 4 0;
+#X connect 35 0 32 0;
+#X connect 36 0 30 0;
+#X connect 36 1 35 0;
+#X connect 37 0 34 0;
+#X connect 38 0 40 0;
+#X connect 40 0 37 0;
+#X connect 40 0 29 0;
+#X connect 40 0 21 0;
+#X connect 40 0 14 0;
+#X connect 40 0 52 0;
+#X connect 40 0 71 0;
+#X connect 41 0 47 0;
+#X connect 42 0 46 0;
+#X connect 43 0 45 0;
+#X connect 44 0 0 0;
+#X connect 49 0 9 0;
+#X connect 49 0 18 0;
+#X connect 49 0 26 0;
+#X connect 49 0 34 0;
+#X connect 49 0 51 0;
+#X connect 49 0 68 0;
+#X connect 50 0 6 0;
+#X connect 50 0 15 0;
+#X connect 50 0 23 0;
+#X connect 50 0 31 0;
+#X connect 50 0 65 0;
+#X connect 51 0 53 0;
+#X connect 52 0 51 0;
+#X connect 53 0 48 0;
+#X connect 54 0 18 0;
+#X connect 55 0 14 0;
+#X connect 55 0 29 0;
+#X connect 55 0 37 0;
+#X connect 55 0 54 0;
+#X connect 55 0 71 0;
+#X connect 56 0 9 0;
+#X connect 57 0 26 0;
+#X connect 58 0 34 0;
+#X connect 59 0 8 0;
+#X connect 60 0 17 0;
+#X connect 61 0 25 0;
+#X connect 62 0 33 0;
+#X connect 63 0 38 0;
+#X connect 63 0 39 0;
+#X connect 64 0 73 0;
+#X connect 64 0 29 0;
+#X connect 64 0 21 0;
+#X connect 64 0 14 0;
+#X connect 64 0 37 0;
+#X connect 65 0 64 1;
+#X connect 66 0 65 0;
+#X connect 67 0 70 0;
+#X connect 68 0 72 0;
+#X connect 68 0 76 0;
+#X connect 69 0 66 0;
+#X connect 70 0 64 0;
+#X connect 70 1 69 0;
+#X connect 71 0 68 0;
+#X connect 72 0 75 0;
+#X connect 73 0 68 0;
+#X connect 74 0 67 0;
+#X connect 78 0 50 0;
+#X restore -86 404 pd sendsprograms;
+#X obj -3 501 cnv 15 321 128 empty empty empty 20 12 0 14 -212212 -66577
+0;
+#X text 5 518 Reverb sends;
+#X text 114 134 keyboard to start programs \,;
+#X text 115 150 0 to stop \, and "r" to reset.;
+#X obj -73 365 sel 0 1 2 3 4 5;
+#X obj 945 354 cnv 15 158 155 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X text 979 363 Program 5;
+#X scalar drawtut-attr 55.5543 338.569 \;;
+#X scalar drawtut-attr 756 237 \;;
+#X obj 248 248 del 100;
+#X obj 248 270 s resetprograms;
+#N canvas 495 23 677 525 canvas 0;
+#X obj 113 210 s cnv_rcv;
+#X msg 113 185 color \$1;
+#X floatatom 112 161 5 0 0 0 - - -;
+#X obj 96 104 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 111 134 15;
+#X msg 153 134 2;
+#X obj 161 109 del 200;
+#X obj 70 82 sel 0;
+#X obj 88 274 r resetprograms;
+#X obj 61 293 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 60 367 color \$1;
+#X obj 60 392 s cnv_rcv6;
+#X msg 61 338 15;
+#X obj 70 38 inlet;
+#X msg 92 338 -1;
+#X obj 92 317 del 2000;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 3 0 6 0;
+#X connect 4 0 2 0;
+#X connect 5 0 2 0;
+#X connect 6 0 5 0;
+#X connect 7 1 3 0;
+#X connect 8 0 9 0;
+#X connect 9 0 12 0;
+#X connect 9 0 15 0;
+#X connect 10 0 11 0;
+#X connect 12 0 10 0;
+#X connect 13 0 7 0;
+#X connect 14 0 10 0;
+#X connect 15 0 14 0;
+#X restore -70 200 pd canvas colors;
+#X msg 181 508 \; reverb 1 \; reverb_wet 0.2 \; reverb_dry 0.9 \; reverb_roomsize
+0.2 \; reverb_damping 0.3 \; reverb_width 0.5 \;;
+#X text 2 603 Use these send symbols to define reverb parameters.
+;
+#X floatatom 14 284 5 0 0 0 - - -;
+#X obj 120 -4 r loadFof;
+#X msg 182 382 \; pd dsp 1 \; input 95 \; threshold -37 \; freqhip
+130 \; miccontrol 0.9 \; micbocal 0.4 \; start bang \;;
+#X msg 383 382 \; input 95 \; threshold -37 \; freqhip 130 \; miccontrol
+0.9 \; micbocal 0.4 \;;
+#X msg 583 384 \; input 95 \; threshold -39 \; freqhip 130 \; miccontrol
+0.9 \; micbocal 0.2 \;;
+#X msg 772 382 \; input 95 \; threshold -30 \; freqhip 130 \; miccontrol
+0.9 \; micbocal 0.2 \;;
+#X msg 968 382 \; input 95 \; threshold -30 \; freqhip 130 \; miccontrol
+0.9 \; micbocal 0.2 \;;
+#X obj 465 65 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 462 85 f;
+#X obj 494 84 + 1;
+#X floatatom 494 125 5 0 0 0 - - -;
+#X obj 524 82 mod 6;
+#X obj 494 105 - 1;
+#X obj 458 45 r programsBFof;
+#X obj 365 26 r programsFof;
+#X obj 368 177 r resetFof;
+#X obj 368 198 sel 1;
+#X connect 4 0 26 0;
+#X connect 21 0 16 0;
+#X connect 21 1 16 1;
+#X connect 21 2 16 2;
+#X connect 21 3 16 3;
+#X connect 21 4 16 4;
+#X connect 21 5 16 5;
+#X connect 26 0 27 0;
+#X connect 31 0 28 0;
+#X connect 31 0 21 0;
+#X connect 32 0 7 0;
+#X connect 38 0 39 0;
+#X connect 39 0 40 0;
+#X connect 40 0 42 0;
+#X connect 40 0 43 0;
+#X connect 42 0 39 1;
+#X connect 43 0 41 0;
+#X connect 44 0 38 0;
+#X connect 45 0 31 0;
+#X connect 46 0 47 0;
+#X connect 47 0 4 0;
+#X coords 0 -1 1 1 214 204 1 96 28;

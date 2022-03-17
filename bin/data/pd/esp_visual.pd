@@ -1,0 +1,31 @@
+#N canvas 137 184 1023 654 10;
+#X obj 108 123 cnv 15 246 179 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 231 184 cnv 15 113 114 empty cnv_rcv5 empty 20 12 0 14 -66577
+-262144 0;
+#X obj 116 184 cnv 15 113 114 empty cnv_rcv4 empty 20 12 0 14 -66577
+-262144 0;
+#X obj 122 135 tgl 25 0 empty empty empty 17 7 0 10 -191407 -1 -1 0
+1;
+#X obj 27 162 s procesp;
+#X obj 139 5 r gridfolhas;
+#X obj 311 22 r gridflauta;
+#X text 120 167 Esp. leaves P1 P2;
+#X text 242 167 Esp. flute P3;
+#X text 157 137 espacialization (on/off);
+#X obj 139 50 unpack;
+#X obj 259 50 unpack;
+#X obj 55 71 r spatFof;
+#X obj 111 417 s spatfluteXFpd;
+#X obj 154 456 s spatfluteYFpd;
+#X obj 25 350 s spatleavesXFpd;
+#X obj 68 389 s spatleavesYFpd;
+#X connect 3 0 4 0;
+#X connect 5 0 10 0;
+#X connect 6 0 11 0;
+#X connect 10 0 15 0;
+#X connect 10 1 16 0;
+#X connect 11 0 13 0;
+#X connect 11 1 14 0;
+#X connect 12 0 3 0;
+#X coords 0 -1 1 1 248 198 1 107 106;

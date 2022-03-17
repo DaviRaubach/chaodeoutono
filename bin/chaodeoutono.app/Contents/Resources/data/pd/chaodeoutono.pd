@@ -1,0 +1,13 @@
+#N struct drawtut-attr float x float y;
+#N canvas 332 94 736 565 10;
+#X obj 3 4 cnv 15 711 540 empty cnv_rcv6 empty 20 12 0 14 -1 -262144
+0;
+#X obj 16 14 cnv 15 685 517 empty empty empty 20 12 2 16 -104026 -262144
+0;
+#X obj 441 325 esp_visual;
+#X obj 25 64 programs;
+#X obj 415 63 outs;
+#X obj 24 24 cnv 15 666 25 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 26 285 ins;
+#X text 30 29 Chão de Outono - Davi Raubach - 2017(8);
